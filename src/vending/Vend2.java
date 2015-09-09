@@ -14,7 +14,7 @@ public class Vend2 {
 	Vending newVend = new Vending();
 	foodInfo newFood = new foodInfo();
 	dispenser newVenddispenser = new dispenser();
-	int customer = RG.nextInt(5)+1;
+	int customer = RG.nextInt(10)+1;
 	newFood.FoodInfo();
 	
 	for (int i = 0; i < customer; i++)
@@ -26,6 +26,7 @@ public class Vend2 {
 	        catch (Exception e){}
 	        
 	        System.out.println("\nVending Machine Off");
+	        System.out.println("Number of customer: "+customer+"\n");
 	        newVend.Inventory();
 	    
 }

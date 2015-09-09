@@ -29,10 +29,10 @@ public class Vending  {
 		{
 
 
-			  while (true) {
+			   while(true) {
 				    try {
 				    
-				  
+				    	
 				    	System.out.println("welcome, make your pick");
 				        user = RG.nextInt(10)+100;
                     			        System.out.println(user);
@@ -56,26 +56,28 @@ public class Vending  {
 			    	    }
 				  }
 		
-				  	
+				 
 			switch (user)
 	    	{
 	    	case 101: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
+     
 		    	   	if (amount > inventory.get(0))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+			              
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Kitkat");
 				    	System.out.println("Your total is $"+ amount);
+				    	inventory.set(0, inventory.get(0)-amount);
 		    	   		break;
 		    	   	}
 		    	    }
@@ -85,28 +87,27 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
-
-	    		inventory.set(0, inventory.get(0)-amount);
-	    		break;
+		    	}break;
+	    		
 	    	case 102: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(1))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+			
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Cheetos");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(1, inventory.get(1)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -115,28 +116,28 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(1, inventory.get(1)-amount);
-	    		break;
+
 	    	case 103: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(2))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				             
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Sprite");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(2, inventory.get(2)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -145,28 +146,27 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(2, inventory.get(2)-amount);
-	    		break;
 	    	case 104: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(3))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				         
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Coke");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(3, inventory.get(3)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -175,28 +175,28 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(3, inventory.get(3)-amount);
-	    		break;
+
 	    	case 105: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(4))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				            
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Kitkat");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(4, inventory.get(4)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -205,28 +205,29 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(4, inventory.get(4)-amount);
-	    		break;
+
 	    	case 106: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                  	System.out.println(amount);
                  	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(5))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				       
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Cheetos");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+
+			    		inventory.set(5, inventory.get(5)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -235,28 +236,27 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(5, inventory.get(5)-amount);
-	    		break;
 	    	case 107: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(6))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				         
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Sprite");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(6, inventory.get(6)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -265,28 +265,28 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(6, inventory.get(6)-amount);
-	    		break;
+
 	    	case 108: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	    amount = RG.nextInt(10)+1;
+		    	    amount = RG.nextInt(5);
                		System.out.println(amount);
                		total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(7))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				         
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Coke");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(7, inventory.get(7)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -295,28 +295,27 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(7, inventory.get(7)-amount);
-	    		break;
 	    	case 109: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                   	System.out.println(amount);
                   	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(8))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				           
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Kitkat");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(8, inventory.get(8)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -325,28 +324,27 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(8, inventory.get(8)-amount);
-	    		break;
 	    	case 110: 
 	    		while (true){
 		    	    try {
 		    	    System.out.println("how many would you like?");
-		    	   	amount = RG.nextInt(10)+1;
+		    	   	amount = RG.nextInt(5);
                  	System.out.println(amount);
                  	total = amount + total;
-		    	   	if (amount > inventory.get(0))
+		    	   	if (amount > inventory.get(9))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
 				            System.out.println("try again");
-			                  
+				            
 				}
 		    	   	else
 		    	   	{
 			    		System.out.println("You picked "+amount+ " Cheetos");
 				    	System.out.println("Your total is $"+ amount);
-		    	   		break;
+			    		inventory.set(9, inventory.get(9)-amount);
+			    		break;
 		    	   	}
 		    	    }
 		    	    
@@ -355,12 +353,11 @@ public class Vending  {
 				       System.out.println("error"); 
 				       break;
 			    	}
-		    	}
+		    	}break;
 
-	    		inventory.set(9, inventory.get(9)-amount);
-	    		break;
 	    		
 	    	}
+				 
 	    	System.out.println("Pay");
 	    	while(true){
 	    	int pay = RG.nextInt(10);
