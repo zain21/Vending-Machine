@@ -9,7 +9,6 @@ public class Vend2 {
 
 	public static void main (String [] args)
 	 {
-
 	Random RG = new Random();
 	Vending newVend = new Vending();
 	foodInfo newFood = new foodInfo();

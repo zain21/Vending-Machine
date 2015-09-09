@@ -278,8 +278,7 @@ public class Vending  {
 		    	   	if (amount > inventory.get(7))
 		    	   	{
 		    	 		    System.out.println("NOT valid");
-				            System.out.println("try again");
-				         
+				            System.out.println("try again");				         
 				}
 		    	   	else
 		    	   	{
